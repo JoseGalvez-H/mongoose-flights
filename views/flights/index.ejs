@@ -1,0 +1,15 @@
+<%- include('../partials/header') %>
+
+<h2>All Mongoose Flights</h2>
+<ul>
+    <% flights.forEach(flight => { %>
+        <li>
+            <strong>Airline:</strong> <%= flight.airline %><br>
+            <strong>Airport:</strong> <%= flight.airport %><br>
+            <strong>Flight No.:</strong> <%= flight.flightNo %><br>
+            <strong>Departure:</strong> <%= flight.departs.toLocaleString() %><br>
+        </li>
+    <% }); %>
+</ul>
+
+<%- include('../partials/footer') %>
