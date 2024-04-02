@@ -1,9 +1,9 @@
 <%- include('../partials/header') %>
 
-<h2>All Mongoose Flights</h2>
-<ul>
+<h1>All Mongoose Flights</h1>
+<ul class="flight-list">
     <% flights.forEach(flight => { %>
-        <li>
+        <li class="flight-item">
             <strong>Airline:</strong> <%= flight.airline %><br>
             <strong>Airport:</strong> <%= flight.airport %><br>
             <strong>Flight No.:</strong> <%= flight.flightNo %><br>

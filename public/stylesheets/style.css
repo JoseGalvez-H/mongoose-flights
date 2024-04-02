@@ -1,8 +1,63 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: hsl(307, 63%, 86%);
+}
+
+.homeTitle, h1 {
+  display: flex;
+  justify-content: center;
+  color: #6e2be2;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
 }
 
 a {
-  color: #00B7FF;
+  color: hsl(286, 100%, 50%);
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+.flight-item {
+  max-width: 260px;
+  background-color: hwb(318 83% 3%);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 10px 0; 
+}
+
+.navbar a {
+  margin: 0 35px; 
+}
+
+button {
+  background-color: hsl(333, 69%, 84%);
+}
+
+button:hover {
+  background-color: #ee599c;
 }
