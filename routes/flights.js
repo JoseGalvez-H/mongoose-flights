@@ -1,8 +1,8 @@
-var express = require('express');
-var router = express.Router();
-var flightsCtrl = require('../controllers/flights');
-var ticketsCtrl = require('../controllers/tickets');
-var destinationsCtrl = require('../controllers/destinations');
+const express = require('express');
+const router = express.Router();
+const flightsCtrl = require('../controllers/flights');
+const ticketsCtrl = require('../controllers/tickets');
+const destinationsCtrl = require('../controllers/destinations');
 
 router.get('/', flightsCtrl.index);
 router.get('/new', flightsCtrl.new);
