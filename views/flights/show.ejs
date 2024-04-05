@@ -34,7 +34,7 @@
 <% } %>
 
 <form id="add-destination-form" method="POST" action="/flights/<%= flight._id %>/destinations" class="destinations">
-    <div>
+    <div class="centered-content">
         <label for="airport">Airport</label>
         <select name="airport" id="airport">
             <option value="SEA">SEA</option>
@@ -44,7 +44,7 @@
             <option value="HNL">HNL</option>
         </select>
     </div>
-    <div>
+    <div class="centered-content">
         <label for="arrival">Arrival</label>
         <input type="date" name="arrival" id="arrival">
     </div>
