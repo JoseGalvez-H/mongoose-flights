@@ -164,12 +164,11 @@ tr:hover {
   margin-bottom: 10px;
 }
 
-.destinations,
-{
-background-color: var(--bg-100);
-margin-top: 30px;
-gap: 20px;
-justify-content: center;
+.destinations {
+  background-color: var(--bg-100);
+  margin-top: 30px;
+  gap: 20px;
+  justify-content: center;
 }
 
 h2 {
