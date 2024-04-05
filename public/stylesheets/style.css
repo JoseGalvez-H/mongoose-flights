@@ -18,7 +18,8 @@ body {
   background-color: var(--bg-100);
 }
 
-.homeTitle, h1 {
+.homeTitle,
+h1 {
   display: flex;
   justify-content: center;
   color: var(--primary-300);
@@ -33,7 +34,8 @@ nav {
   min-height: 40px;
 }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none;
   font-weight: bold;
 }
@@ -49,23 +51,26 @@ a:hover {
 
 form {
   display: block;
-  width: 20%; 
-  margin: 20px auto; 
+  width: 20%;
+  margin: 20px auto;
   padding: 20px;
   background-color: var(--bg-300);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-form label, form select, form input[type="number"], form input[type="datetime-local"] {
-  display: block; 
+form label,
+form select,
+form input[type="number"],
+form input[type="datetime-local"] {
+  display: block;
   margin-bottom: 10px;
   width: 100%;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 form button {
-  width: auto; 
-  padding: 10px 20px; 
+  width: auto;
+  padding: 10px 20px;
   margin-top: 20px;
   margin-left: 25%;
   background-color: var(--accent-100);
@@ -126,7 +131,8 @@ table {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-th, td {
+th,
+td {
   text-align: center;
   padding: 12px 20px;
   border-bottom: 1px solid var(--primary-200);
@@ -158,11 +164,12 @@ tr:hover {
   margin-bottom: 10px;
 }
 
-.destinations {
-  background-color: var(--bg-100);
-  margin-top: 30px;
-  gap: 20px;
-  justify-content: center;
+.destinations,
+{
+background-color: var(--bg-100);
+margin-top: 30px;
+gap: 20px;
+justify-content: center;
 }
 
 h2 {
