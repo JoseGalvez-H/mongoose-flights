@@ -1,13 +1,26 @@
+:root {
+  --primary-100: #BFBFBF;
+  --primary-200: #a2a2a2;
+  --primary-300: #616161;
+  --accent-100: #F2BAC9;
+  --accent-200: #8e5c6a;
+  --text-100: #333333;
+  --text-200: #5c5c5c;
+  --bg-100: #F5ECEC;
+  --bg-200: #ebe2e2;
+  --bg-300: #c2baba;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: hsl(307, 63%, 86%);
+  background-color: var(--bg-100);
 }
 
 .homeTitle, h1 {
   display: flex;
   justify-content: center;
-  color: #6e2be2;
+  color: var(--primary-300);
   margin-bottom: 50px;
   margin-top: 50px;
 }
@@ -15,16 +28,29 @@ body {
 nav {
   display: flex;
   justify-content: space-around;
+  background-color: var(--bg-200);
+  min-height: 40px;
+}
+
+a, a:hover {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 a {
-  color: hsl(286, 100%, 50%);
+  color: var(--accent-100);
+}
+
+a:hover {
+  color: var(--accent-200);
+  text-decoration: underline;
 }
 
 form {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  background-color: var(--bg-300);
 }
 
 ul {
@@ -34,30 +60,84 @@ ul {
 
 li {
   margin-bottom: 15px;
+  color: var(--text-200);
 }
 
 .flight-item {
   max-width: 260px;
-  background-color: hwb(318 83% 3%);
+  background-color: var(--primary-100);
   padding: 10px;
   margin-bottom: 10px;
 }
 
 .navbar {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  padding: 10px 0; 
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
 }
 
 .navbar a {
-  margin: 0 35px; 
+  margin: 0 35px;
 }
 
 button {
-  background-color: hsl(333, 69%, 84%);
+  background-color: var(--accent-100);
+  color: var(--text-100);
 }
 
 button:hover {
-  background-color: #ee599c;
+  background-color: var(--accent-200);
+  cursor: pointer;
+}
+
+table {
+  width: 60%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: 20%;
+  background-color: var(--bg-200);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  text-align: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--primary-200);
+}
+
+th {
+  background-color: var(--primary-200);
+  color: var(--text-100);
+  font-weight: normal;
+}
+
+tr:nth-child(even) {
+  background-color: var(--bg-300);
+}
+
+tr:hover {
+  background-color: var(--accent-100);
+  cursor: pointer;
+}
+
+.centered-content {
+  text-align: center;
+  display: block;
+}
+
+.new-ticket {
+  text-align: center;
+  display: block;
+}
+
+.destinations {
+  background-color: var(--bg-100);
+  margin-top: 30px;
+  gap: 20px;
+  justify-content: center;
+}
+
+h2 {
+  margin-top: 60px;
 }

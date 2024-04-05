@@ -1,15 +1,37 @@
 <%- include('../partials/header') %>
 
-<h1>All Mongoose Flights</h1>
-<ul class="flight-list">
-    <% flights.forEach(flight => { %>
-        <li class="flight-item">
-            <strong>Airline:</strong> <%= flight.airline %><br>
-            <strong>Airport:</strong> <%= flight.airport %><br>
-            <strong>Flight No.:</strong> <%= flight.flightNo %><br>
-            <strong>Departure:</strong> <%= flight.departs.toLocaleString() %><br>
-        </li>
-    <% }); %>
-</ul>
+    <h1>All Mongoose Flights</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Airline</th>
+                <th>Airport</th>
+                <th>Flight No.</th>
+                <th>Departs</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <% flights.forEach(function(f) { %>
+                <tr>
+                    <td>
+                        <%= f.airline %>
+                    </td>
+                    <td>
+                        <%= f.airport %>
+                    </td>
+                    <td>
+                        <%= f.flightNo %>
+                    </td>
+                    <td>
+                        <%= f.departs.toLocaleString() %>
+                    </td>
+                    <td>
+                        <a href="/flights/<%= f._id %>">DETAILS</a>
+                    </td>
+                </tr>
+                <% }); %>
+        </tbody>
+    </table>
 
-<%- include('../partials/footer') %>
+    <%- include('../partials/footer') %>
